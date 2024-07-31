@@ -13,6 +13,10 @@ import user3 from "../assets/profile-pictures/user3.jpg";
 import user4 from "../assets/profile-pictures/user4.jpg";
 import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
+import magc from "../assets/profile-pictures/magc.jpg";
+import lmvg from "../assets/profile-pictures/lmvg.jpg";
+import lrg from "../assets/profile-pictures/lrg.jpg";
+import ccyg from "../assets/profile-pictures/ccyg.jpg";
 
 export const navItems = [
   { label: "Inicio", href: "#" },
@@ -35,10 +39,10 @@ export const myv = [
 ];
 
 export const aboutUs = [
-  { name: "Lidia Villegas", image: "lmvg" , description: "aa"},
-  { name: "Liliana Ramos", image: "lrg" , description: "aa"},
-  { name: "Catalina Yepes", image: "ccyg" , description: "aa"},
-  { name: "Mario Giraldo", image: "magc" , description: "aa"},
+  { name: "Lidia Villegas", profile:"Co-Founder & CEO", image: lmvg , description: "Estudiantes de Trabajo Social, líder con experiencias administrativas y coordinadora de grupos"},
+  { name: "Liliana Ramos", profile:"Co-Founder & CEO", image: lrg , description: "Estudiante de Trabajo Social con conocimiento de trabajo en equipo y resolución de conflicto"},
+  { name: "Catalina Yepes", profile:"Co-Founder & CEO", image: ccyg , description: "Estudiante de trabajo social con conocimiento de análisis de problemáticas ambientales"},
+  { name: "Mario Giraldo", profile:"CTO", image: magc , description: "Estudiante de ingeniería de sistemas con conocimiento en desarrollo web y móvil"},
 
 ];
 

@@ -7,6 +7,7 @@ import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
 import { Footer } from './components/Footer';
 import { AboutUs } from './components/AboutUs';
+import { HistorySection } from './components/HistorySection';
 
 function App() {
   return (
