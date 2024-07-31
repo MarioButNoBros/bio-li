@@ -16,10 +16,11 @@ function AboutUs() {
                 {aboutUs.map((about, index) => (
                     <motion.div
                         key={index}
-                        className="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 max-w-md flex flex-col items-center gap-12 transition-all duration-500 p-4 m-6 bg-white shadow-lg rounded-lg"
+                        className="w-full sm:w-1/2 lg:w-1/2 xl:w-1/2 max-w-md flex flex-col items-center gap-12 transition-all duration-500 p-4 m-6 bg-white shadow-lg rounded-lg
+                        hover:shadow-[#708871]"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                     >
                         <div className="w-48 h-48 lg:w-56 lg:h-56">

@@ -1,42 +1,26 @@
-import { resourcesLinks, platformLinks, communityLinks } from "../constants"
+import { resourcesLinks } from "../constants"
 
 function Footer() {
     return (
         <footer className="mt-20 border-t py-10 border-neutral-700">
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                <div>
-                    <h3 className="text-md font-semibold mb-4">Resources</h3>
-                    <ul className="space-y-2">
-                        {resourcesLinks.map((link, index) => (
+            <div className="container px-4 mx-auto">
+                <div className="text-center">
+                    <ul className="flex justify-center space-x-12">
+                        {resourcesLinks.map((item, index) => (
                             <li key={index}>
-                                <a className="text-neutral-600 hover:text-neutral-200" href={link.href}>{link.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="text-md font-semibold mb-4">Platform</h3>
-                    <ul className="space-y-2">
-                        {platformLinks.map((link, index) => (
-                            <li key={index}>
-                                <a className="text-neutral-600 hover:text-neutral-200" href={link.href}>{link.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="text-md font-semibold mb-4">Community</h3>
-                    <ul className="space-y-2">
-                        {communityLinks.map((link, index) => (
-                            <li key={index}>
-                                <a className="text-neutral-600 hover:text-neutral-200" href={link.href}>{link.text}</a>
+                                <a href={item.href} className="flex items-center">
+                                    {item.icon}
+                                </a>
                             </li>
                         ))}
                     </ul>
                 </div>
             </div>
+            <a className="text-xs">
+                ©Bio-Li
+            </a>
         </footer>
-    )
+    );
 }
 
 export { Footer }

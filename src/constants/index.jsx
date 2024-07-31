@@ -6,6 +6,7 @@ import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 import { Rocket } from 'lucide-react';
 import { Telescope } from 'lucide-react';
+import { Instagram, Linkedin, MessageCircleMore } from 'lucide-react';
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -19,10 +20,11 @@ import lrg from "../assets/profile-pictures/lrg.jpg";
 import ccyg from "../assets/profile-pictures/ccyg.jpg";
 
 export const navItems = [
-  { label: "Inicio", href: "#" },
-  { label: "Mision", href: "#" },
-  { label: "Nosotros", href: "#" },
-  { label: "Contacto", href: "#" },
+  { label: "Inicio", href: "#inicio" },
+  { label: "Historia", href: "#historia" },
+  { label: "Misión", href: "#mision" },
+  { label: "Nosotros", href: "#nosotros" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export const myv = [
@@ -39,10 +41,10 @@ export const myv = [
 ];
 
 export const aboutUs = [
-  { name: "Lidia Villegas", profile:"Co-Founder & CEO", image: lmvg , description: "Estudiantes de Trabajo Social, líder con experiencias administrativas y coordinadora de grupos"},
-  { name: "Liliana Ramos", profile:"Co-Founder & CEO", image: lrg , description: "Estudiante de Trabajo Social con conocimiento de trabajo en equipo y resolución de conflicto"},
-  { name: "Catalina Yepes", profile:"Co-Founder & CEO", image: ccyg , description: "Estudiante de trabajo social con conocimiento de análisis de problemáticas ambientales"},
-  { name: "Mario Giraldo", profile:"CTO", image: magc , description: "Estudiante de ingeniería de sistemas con conocimiento en desarrollo web y móvil"},
+  { name: "Lidia Villegas", profile: "Co-Founder & CEO", image: lmvg, description: "Estudiantes de Trabajo Social, líder con experiencias administrativas y coordinadora de grupos" },
+  { name: "Liliana Ramos", profile: "Co-Founder & CEO", image: lrg, description: "Estudiante de Trabajo Social con conocimiento de trabajo en equipo y resolución de conflicto" },
+  { name: "Catalina Yepes", profile: "Co-Founder & CEO", image: ccyg, description: "Estudiante de trabajo social con conocimiento de análisis de problemáticas ambientales" },
+  { name: "Mario Giraldo", profile: "Co-Founder & CTO", image: magc, description: "Estudiante de ingeniería de sistemas con conocimiento en desarrollo web y móvil" },
 
 ];
 
@@ -181,25 +183,7 @@ export const pricingOptions = [
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
-];
-
-export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
-];
-
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+  { href: "#", icon: <Instagram /> },
+  { href: "#", icon: <Linkedin /> },
+  { href: "#", icon: <MessageCircleMore /> }
 ];

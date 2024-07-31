@@ -14,11 +14,21 @@ function App() {
     <>
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
-        <InitialSection />
-        <MissionAndVision />
-        < AboutUs />
-        <Testimonials />
-        <Footer />
+        <section id="inicio" className="scroll-mt-48">
+          <InitialSection />
+        </section>
+        <section id="historia" className="scroll-mt-24">
+          <HistorySection />
+        </section>
+        <section id="mision" className="scroll-mt-24">
+          <MissionAndVision />
+        </section>
+        <section id="nosotros" className="scroll-mt-24">
+          <AboutUs />
+        </section>
+        <section id="contacto" className="scroll-mt-24">
+          <Footer />
+        </section>
       </div>
     </>
   );
