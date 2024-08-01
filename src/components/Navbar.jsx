@@ -51,9 +51,13 @@ function Navbar() {
                             ))}
                         </ul>
                         <div className="flex space-x-6">
-                            <a href="#" className="py-2 px-3 border rounded-md text-center">
-                                Sign In
-                            </a>
+                            <button
+                                href="#"
+                                className="flex items-center py-2 px-4 border rounded-md text-center 
+                                hover:bg-neutral-500 focus:outline-none focus:ring-2 focus:ring-opacity-50">
+                                <ShoppingCart className="mr-2" />
+                                <span>Comprar</span>
+                            </button>
                         </div>
                     </div>
                 )}
