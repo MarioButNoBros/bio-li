@@ -3,16 +3,19 @@ import { useState } from "react";
 import logo from "../assets/logo.png"
 import { navItems } from "../constants"
 import { ShoppingCart } from "lucide-react";
+import { ApiWhatsApp } from "../api/ApiWhatsApp";
 
 function Navbar() {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
+
     const handleScroll = (event, targetId) => {
         event.preventDefault();
         const targetElement = document.getElementById(targetId);
-        if (targetElement){
+        if (targetElement) {
             const offsetTop = targetElement.id == 'init' ? targetElement.offsetTop - 182 : targetElement.offsetTop - 120;
             window.scrollTo({
                 top: offsetTop,
@@ -38,10 +41,11 @@ function Navbar() {
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
                         <button
+                            onClick={ApiWhatsApp}
                             href="#"
                             className="flex items-center py-2 px-4 border rounded-md 
                             text-center  text-stone-50
-                            hover:bg-neutral-500 focus:outline-none focus:ring-2 focus:ring-opacity-50">
+                            hover:bg-stone-50 hover:text-[#708871] focus:outline-none focus:ring-2 focus:ring-opacity-50">
                             <ShoppingCart className="mr-2" />
                             <span>Comprar</span>
                         </button>
@@ -53,7 +57,7 @@ function Navbar() {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden border-b border-l-neutral-400">
+                    <div className="fixed right-0 z-50 bg-white w-full p-8 flex flex-col justify-center items-center lg:hidden border-b border-l-neutral-800 text-neutral-600">
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={index} className="py-4">
@@ -63,9 +67,10 @@ function Navbar() {
                         </ul>
                         <div className="flex space-x-6">
                             <button
+                                onClick={ApiWhatsApp}
                                 href="#"
-                                className="flex items-center py-2 px-4 border rounded-md text-center 
-                                hover:bg-neutral-500 focus:outline-none focus:ring-2 focus:ring-opacity-50">
+                                className="flex items-center py-2 px-5 border rounded-md text-center 
+                                hover:bg-[#708871] hover:text-stone-50 focus:outline-none focus:ring-2 focus:ring-opacity-50">
                                 <ShoppingCart className="mr-2" />
                                 <span>Comprar</span>
                             </button>

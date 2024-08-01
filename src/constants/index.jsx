@@ -34,7 +34,7 @@ export const aboutUs = [
 ];
 
 export const resourcesLinks = [
-  { href: "#", icon: <Instagram /> },
-  { href: "#", icon: <Linkedin /> },
-  { href: "#", icon: <MessageCircleMore /> }
+  { href: "https://www.instagram.com/", icon: <Instagram />, id: "instagram" },
+  { href: "https://www.linkedin.com/", icon: <Linkedin />, id: "linkedin" },
+  { href: "#", icon: <MessageCircleMore />, id: "whatsapp" }
 ];
