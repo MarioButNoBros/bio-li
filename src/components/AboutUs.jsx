@@ -4,7 +4,7 @@ import { aboutUs } from "../constants"
 
 function AboutUs() {
     return (
-        <div className="relative my-20 ">
+        <section className="relative my-20 " id="aboutUs">
             <motion.h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20  bg-gradient-to-r from-[#6B8E23] to-[#9ACD32] text-transparent bg-clip-text"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ function AboutUs() {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function InitialSection() {
     return (
-        <div className="flex flex-col items-center mt-4 lg:mt-8">
+        <section className="flex flex-col items-center mt-4 lg:mt-8" id="init">
             <motion.div className="flex flex-col items-center"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -24,6 +24,7 @@ function InitialSection() {
             </motion.div>
             <div className="flex flex-col sm:flex-row sm:justify-center sm:gap-4 mt-20">
                 <motion.video autoPlay loop muted
+                    controlsList="nodownload"
                     className="rounded-lg w-full sm:w-1/2 border border-[#9ACD32] shadow-[#708871] mx-2 my-4"
                     initial={{ opacity: 0, y: 50, scale: 0.5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -34,6 +35,7 @@ function InitialSection() {
                     Your browser does not support the video tag.
                 </motion.video>
                 <motion.video autoPlay loop muted
+                    controlsList="nodownload"
                     className="rounded-lg w-full sm:w-1/2 border border-[#9ACD32] shadow-[#708871] mx-2 my-4"
                     initial={{ opacity: 0, y: 50, scale: 0.5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -44,7 +46,7 @@ function InitialSection() {
                     Your browser does not support the video tag.
                 </motion.video>
             </div>
-        </div>
+        </section>
     )
 }
 

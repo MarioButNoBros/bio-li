@@ -4,7 +4,7 @@ import { myv } from "../constants"
 
 function MissionAndVision() {
     return (
-        <div className="relative mt-40 border-b border-neutral-800 min-h-[600px]">
+        <section className="relative mt-40 border-b border-neutral-800 min-h-[600px]" id="mision">
             {myv.map((myv, index) => (
                 <motion.div key={index} className="text-center flex flex-col items-center my-20"
                     initial={{ opacity: 0, y: 100 }}
@@ -27,7 +27,7 @@ function MissionAndVision() {
                     </p>
                 </motion.div>
             ))}
-        </div>
+        </section>
 
 
     )

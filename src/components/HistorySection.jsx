@@ -10,7 +10,7 @@ function HistorySection() {
         </p>
     ));
     return (
-        <div className="items-center mb-20">
+        <section className="items-center mb-20" id="history">
             <motion.div className="flex items-center justify-center mt-40 mb-20"
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ function HistorySection() {
                     </p>
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 }
 

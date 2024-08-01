@@ -9,6 +9,17 @@ function Navbar() {
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
+    const handleScroll = (event, targetId) => {
+        event.preventDefault();
+        const targetElement = document.getElementById(targetId);
+        if (targetElement){
+            const offsetTop = targetElement.id == 'init' ? targetElement.offsetTop - 182 : targetElement.offsetTop - 120;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth"
+            })
+        }
+    }
 
     return (
         <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-l-neutral-400 bg-[#708871] ">
@@ -21,7 +32,7 @@ function Navbar() {
                     <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item, index) => (
                             <li key={index}>
-                                <a href={item.href} className="text-stone-50">{item.label}</a>
+                                <a href={`#${item.targetId}`} className="text-stone-50" onClick={(e) => handleScroll(e, item.targetId)}>{item.label}</a>
                             </li>
                         ))}
                     </ul>
@@ -46,7 +57,7 @@ function Navbar() {
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={index} className="py-4">
-                                    <a href={item.href}>{item.label}</a>
+                                    <a href={`#${item.targetId}`} onClick={(e) => handleScroll(e, item.targetId)}>{item.label}</a>
                                 </li>
                             ))}
                         </ul>
