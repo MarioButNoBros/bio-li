@@ -3,6 +3,7 @@ import magc from "../assets/profile-pictures/magc.jpg";
 import lmvg from "../assets/profile-pictures/lmvg.jpg";
 import lrg from "../assets/profile-pictures/lrg.jpg";
 import ccyg from "../assets/profile-pictures/ccyg.jpg";
+import audio from "../assets/testimonio.mp4";
 
 export const navItems = [
   { label: "Inicio", targetId: "init" },
@@ -34,7 +35,15 @@ export const aboutUs = [
 ];
 
 export const resourcesLinks = [
-  { href: "https://www.instagram.com/", icon: <Instagram />, id: "instagram" },
-  { href: "https://www.linkedin.com/", icon: <Linkedin />, id: "linkedin" },
+  { href: "https://www.instagram.com/biolitextil/", icon: <Instagram />, id: "instagram" },
+  { href: "https://www.linkedin.com/in/bio-li-textil-a3b268321/", icon: <Linkedin />, id: "linkedin" },
   { href: "#", icon: <MessageCircleMore />, id: "whatsapp" }
 ];
+
+export const tracks = [
+  {
+    url: audio,
+    title: 'Testimonio Bio-Li',
+    tags: ['']
+  }
+]

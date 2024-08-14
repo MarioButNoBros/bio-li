@@ -5,6 +5,7 @@ import { MissionAndVision } from './components/MissionAndVision';
 import { Footer } from './components/Footer';
 import { AboutUs } from './components/AboutUs';
 import { HistorySection } from './components/HistorySection';
+import { Testimonials } from './components/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <InitialSection />
         <HistorySection />
         <MissionAndVision />
+        <Testimonials />
         <AboutUs />
         <Footer />
       </div>
