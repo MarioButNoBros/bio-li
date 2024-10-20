@@ -29,7 +29,6 @@ export const myv = [
 export const aboutUs = [
   { name: "Lidia Villegas", profile: "Co-Founder & CEO", image: lmvg, description: "Estudiantes de Trabajo Social, líder con experiencias administrativas y coordinadora de grupos" },
   { name: "Liliana Ramos", profile: "Co-Founder & CEO", image: lrg, description: "Estudiante de Trabajo Social con conocimiento de trabajo en equipo y resolución de conflicto" },
-  { name: "Catalina Yepes", profile: "Co-Founder & CEO", image: ccyg, description: "Estudiante de trabajo social con conocimiento de análisis de problemáticas ambientales" },
   { name: "Mario Giraldo", profile: "Co-Founder & CTO", image: magc, description: "Estudiante de ingeniería de sistemas con conocimiento en desarrollo web y móvil" },
 
 ];
